@@ -4,7 +4,7 @@ Acting as a shell to get timer functionality for tellstick library.
 ##Installation
 
 ##Example
-''' javascript
+```javascript
 var timer = require('tellstick-timer');
 ttd = timer();
 
@@ -16,9 +16,7 @@ ttd.removeTimer(1, 999, function(err, lampId, timerId) {
   if (!err) console.log('Timer removed for lamp: ' + lampId + ' with timer ID: ' + timerId);
   if (err) console.log('Could not remove timer. ' + err);
 });
-'''
-
-##Roadmap
+```
 
 ##License
 The MIT License (MIT)
