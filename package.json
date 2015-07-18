@@ -1,0 +1,23 @@
+{
+  "name": "tellstick-timer",
+  "author": "Johan Kitti Söderberg <johan.kitti@gmail.com>",
+  "description": "Adds timer functionality to tellstick library.",
+  "keywords": [
+    "telldus",
+    "tellstick",
+    "tellstick-timer"
+  ],
+  "version": "0.0.1",
+  "main": "lib/tellstick-timer.js",
+  "engines": {
+    "node": ">=0.6.10"
+  },
+  "dependencies": {
+    "tellstick": "1.0.1",
+    "node-schedule": "^0.2.9",
+    "underscore": "*"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --bail"
+  }
+}
