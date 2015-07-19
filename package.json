@@ -15,8 +15,5 @@
   "dependencies": {
     "tellstick": "1.0.1",
     "node-schedule": "^0.2.9"
-  },
-  "scripts": {
-    "test": "mocha --reporter spec --bail"
   }
 }

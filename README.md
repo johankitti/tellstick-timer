@@ -1,18 +1,28 @@
 #Tellstick-timer
-Acting as a shell to get timer functionality for tellstick library.
+
+Acting as a shell to add timer functionality for arokor's tellstick library.
+Inspired by and modeled after arkor's module.
 
 ##Installation
 
+```bash
+$ npm install tellstick-timer
+```
+
 ##Example
+
 ```javascript
 var timer = require('tellstick-timer');
 ttd = timer();
 
+// addNewTimer(lampId, timerId, onMin, onHour, offMin, offHour, callback);
 ttd.addNewTimer(1, 47, 3, 1, 4, 1, function(err, lampId, timerId) {
   if (!err) console.log('Timer added/updated for lamp: ' + lampId + ' with timer ID: ' + timerId);
+  if (err) console.log('Could not add timer. ' + err);
 });
 
-ttd.removeTimer(1, 999, function(err, lampId, timerId) {
+// removeTImer(lampId, timerId, callback);
+ttd.removeTimer(1, 47, function(err, lampId, timerId) {
   if (!err) console.log('Timer removed for lamp: ' + lampId + ' with timer ID: ' + timerId);
   if (err) console.log('Could not remove timer. ' + err);
 });
